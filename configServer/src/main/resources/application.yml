@@ -4,7 +4,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/stratovarius123/SpringCloud
+          uri: https://github.com/stratovarius123/MicroServicoSpringCloud
           searchPaths: /config
 
 server:
