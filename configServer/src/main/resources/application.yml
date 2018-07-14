@@ -1,0 +1,11 @@
+# Uses himself for configuration, simplifying things
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/stratovarius123/SpringCloud
+          searchPaths: /config
+
+server:
+  port: 8888
