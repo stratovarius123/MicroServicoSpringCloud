@@ -19,10 +19,13 @@ public class Consumer {
     
 	@RabbitListener(queues="${jsa.rabbitmq.queue}")
     public void recievedMessage(String msg) {
-		ObjectMapper mapper = new ObjectMapper();
     	try {
+ 
+    		ObjectMapper mapper = new ObjectMapper();
+    		
     		Tarefas tarefas = mapper.readValue(msg, Tarefas.class);
     		tarefasRepository.save(tarefas);
+    	
     	} catch (IOException e) {
 			e.printStackTrace();
 		}

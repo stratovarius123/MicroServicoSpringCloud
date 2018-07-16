@@ -26,6 +26,7 @@ dependencies {
     implementation 'org.hibernate:hibernate-entitymanager'
     implementation 'com.h2database:h2'
     implementation 'org.hibernate:hibernate-core'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
     
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
